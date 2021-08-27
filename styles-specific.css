@@ -71,7 +71,7 @@
 .box .item:hover::before, .box .item:active::before {
     transform: translateY(20px);
     opacity: 1;
-    border: 1px solid;
+    border: 2px dashed;
 }
 
 .item-1 {
