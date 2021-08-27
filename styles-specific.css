@@ -1,0 +1,168 @@
+.box {
+	display: flex;
+	flex-wrap: wrap;
+}
+.box-2 {
+    display: grid;
+    width: 50%;
+}
+.box-2 .item {
+    border: 1px solid;
+    height: 60px;
+    background-size: 50px 50px;
+    background-position-y: 5px;
+    background-position-x: 10px;
+    line-height: 1;
+    justify-content: space-between;
+    padding: 0 5px 0 75px;
+}
+.box-2 .item-0 {
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    height: 60px;
+    border: 1px solid;
+    line-height: 1;
+}
+
+@media (max-width: 600px) {
+    .box-2 .item-0 {
+        font-size: 12px;
+        padding: 10px;
+    }
+  }
+
+.item {
+    height: 200px;
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 10%;
+	flex-basis: 75px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.item::before {
+    content: attr(data);
+    z-index: 999;
+    display: block;
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    top: -10px;
+    transition: all.1s;
+    padding: 0 1px;
+}
+
+.box .item {
+    margin-bottom: 25px;
+}
+
+.box .item:hover {
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+    filter: invert(10%) sepia(70%) saturate(10000%);
+    transform: translateY(-5px);
+}
+
+.box .item:hover::before {
+    transform: translateY(20px);
+    opacity: 1;
+    border: 1px solid;
+
+}
+
+.item-1 {
+    background: url('img/atun.png') center no-repeat;
+    background-size: 130px 130px;
+    background-position-y: 110px;
+    left: 37px;
+}
+
+.item-2 {
+    background: url('img/leche.png') center no-repeat;
+    background-size: 125px 125px;
+    background-position-y: 98px;
+    left: 32px;
+}
+
+.item-3 {
+    background: url('img/avena.png') center no-repeat;
+    background-size: 100px 100px;
+    background-position-y: 107px;
+    left: 25px;
+}
+
+.item-4 {
+    background: url('img/arroz.png') center no-repeat;
+    background-size: 120px 120px;
+    background-position-y: 85px;
+    left: 15px;
+}
+
+.item-5 {
+    background: url('img/fideos.png') center no-repeat;
+    background-size: 160px 160px;
+    background-position-y: 48px;
+    left: 5px;
+}
+
+.item-6 {
+    background: url('img/frijol.png') center no-repeat;
+    background-size: 110px 110px;
+    background-position-y: 95px;
+}
+
+.item-7 {
+    background: url('img/lentejas.png') center no-repeat;
+    background-size: 80px 80px;
+    background-position-y: 120px;
+    right: 10px;
+}
+
+.item-8 {
+    background: url('img/arveja_partida.png') center no-repeat;
+    background-size: 87px 87px;
+    background-position-y: 115px;
+    right: 20px;
+}
+
+.item-9 {
+    background: url('img/azucar.png') center no-repeat;
+    background-size: 95px 95px;
+    background-position-y: 110px;
+    right: 25px;
+}
+
+.item-10 {
+    background: url('img/aceite.png') center no-repeat;
+    background-size: 175px 150px;
+    background-position-y: 52px;
+    right: 4px;
+}
+
+.item-11 {
+    background: url('img/harina_de_trigo.png') center no-repeat;
+    color: red;
+}
+
+.item-12 {
+    background: url('img/quinua.png') center no-repeat;
+    color: red;
+}
+
+.item-13 {
+    background: url('img/huevos.png') center no-repeat;
+    color: red;
+}
+
+.item-14 {
+    background: url('img/carne.png') center no-repeat;
+    color: red;
+}
+
+.item-15 {
+    background: url('img/frutas-verduras.png') center no-repeat;
+    color: red;
+}
