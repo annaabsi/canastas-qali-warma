@@ -1,6 +1,10 @@
 .box {
 	display: flex;
 	flex-wrap: wrap;
+    background: url("img/olla.png") center no-repeat;
+    background-size: 100% 130%;
+    background-position-y: -100px;
+    padding: 200px 155px 10px 155px;
 }
 .box-2 {
     display: grid;
@@ -26,9 +30,17 @@
 }
 
 @media (max-width: 600px) {
+    .box {
+        padding: 0;
+        background-size: 20% 20%;
+        background-position-y: 220px;
+    }
     .box-2 .item-0 {
         font-size: 12px;
         padding: 10px;
+    }
+    .item::before {
+        background-color: white;
     }
   }
 
@@ -63,7 +75,6 @@
 .box .item:hover, .box .item:active {
     cursor: pointer;
     -webkit-backface-visibility: hidden;
-    filter: invert(10%) sepia(70%) saturate(10000%);
     transform: translateY(-5px);
     outline: none;
 }
