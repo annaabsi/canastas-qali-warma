@@ -57,6 +57,7 @@
 
 .box .item {
     margin-bottom: 25px;
+    outline: none;
 }
 
 .box .item:hover, .box .item:active {
@@ -64,6 +65,7 @@
     -webkit-backface-visibility: hidden;
     filter: invert(10%) sepia(70%) saturate(10000%);
     transform: translateY(-5px);
+    outline: none;
 }
 
 .box .item:hover::before, .box .item:active::before {
