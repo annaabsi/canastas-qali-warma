@@ -59,18 +59,17 @@
     margin-bottom: 25px;
 }
 
-.box .item:hover {
+.box .item:hover, .box .item:active {
     cursor: pointer;
     -webkit-backface-visibility: hidden;
     filter: invert(10%) sepia(70%) saturate(10000%);
     transform: translateY(-5px);
 }
 
-.box .item:hover::before {
+.box .item:hover::before, .box .item:active::before {
     transform: translateY(20px);
     opacity: 1;
     border: 1px solid;
-
 }
 
 .item-1 {
